@@ -56,14 +56,17 @@ const boilingTemp = (temp) => {
 const temp1 = 42
 console.log(boilingTemp(42))
 // Expected output: "42 is below boiling point"
+//Actual output as expected.
 
 const temp2 = 350
 console.log(boilingTemp(350))
 // Expected output: "350 is above boiling point"
+//Actual output as expected.
 
 const temp3 = 212
 console.log(boilingTemp(212))
 // Expected output: "212 is at boiling point"
+//Actual output as expected.
 
 
 // --------------------2) Create the code that will combine the two arrays and return the length using the test variables provided below.
@@ -80,22 +83,38 @@ console.log (comboRuns.length)
 
 // --------------------3) Create the code that will reverse the letters of a string using the test variable provided below.
 
-// Pseudo code: Create an array from the letters of the string by using split. Then reverse the order of the characters using reverse. Then put them back into a string again. 
+// Pseudo code: Create an array from the letters of the string by using split. Then reverse the order of the characters using reverse. Then put them back into a string again.
 
 const currentCohort = "Hotel 2022"
 // Expected output: "2202 letoH"
+// Pseudo code: Input a string
+// Output: a string in reverse
+// "2202 letoH"
+// I need to separate each character and put it into an array and then reverse the array and then recombine the letters into a new string.
+
+const chars = currentCohort.split("");
+console.log(chars[6]);
+// expected output: "l"
+
+const currentCohortCopy = currentCohort.split();
+console.log(currentCohortCopy);
+// expected output: Array ["h o t e l"]
+
+
 
 // --------------------4) Create the code that will return the last index of the given value from the array using the test variables provided below.
 
-// Pseudo code: use lastIndexOf(value) to return the last instance of each value in the given array.
+// Pseudo code: use lastIndexOf(value) to return the last instance of each value in the given array. The output will be the index of that value.
 
 const myNumbers = [13, 34, 42, 5, 5, 10, 27, 42, 10]
 console.log(myNumbers.lastIndexOf(42))
 const givenValue1 = 42
 // Expected output: 7
+//Actual ouput: 7
 console.log(myNumbers.lastIndexOf(10))
 const givenValue2 = 10
 // Expected output: 8
+//Actual output: 8
 
 // --------------------5) Create the code that will sort all the numbers in an array from largest to smallest. Use the test variables provided below.
 
